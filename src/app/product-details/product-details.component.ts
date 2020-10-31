@@ -1,20 +1,20 @@
-import { Component, OnInit } from "@angular/core";
-import { ActivatedRoute } from "@angular/router";
-import { products } from "../products";
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { products } from '../products';
 
 @Component({
-  selector: "app-product-details",
-  templateUrl: "./product-details.component.html",
-  styleUrls: ["./product-details.component.css"]
+  selector: 'app-product-details',
+  templateUrl: './product-details.component.html',
+  styleUrls: ['./product-details.component.css']
 })
 export class ProductDetailsComponent implements OnInit {
   product;
   constructor(private route: ActivatedRoute) {}
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.route.paramMap.subscribe(params => {
-      this.product = products.filter(product => {
-        return product.productId === +params.get("productId");
+      this.product = products.find(product => {
+        return product.productId === +params.get('productId');
       });
       alert(JSON.stringify(this.product));
     });
