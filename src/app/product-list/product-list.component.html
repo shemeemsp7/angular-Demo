@@ -1,4 +1,4 @@
-<h2>Products</h2>
+<!-- <h2>Products</h2>
 
 <div *ngFor="let product of products">
 
@@ -7,6 +7,7 @@
 			{{ product.name }}
 		</a>
 	</h3>
+  <img [src]="product.image" alt="image">
 
 	<p *ngIf="product.description">
 		Description: {{ product.description }}
@@ -16,9 +17,25 @@
   </button>
 	<app-product-alerts [product]="product" (notify)="onNotify()">
 	</app-product-alerts>
+</div>  -->
+
+<div fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="space-around center" fxLayoutGap="25px">
+	<mat-card *ngFor="let product of products" fxFlex="calc(33%-25px)" fxFlex.sm="calc(50%-25px)">
+		<mat-card-header>
+			<div mat-card-avatar class="example-header-image"></div>
+			<mat-card-title>
+				<a [title]="product.name + ' details'" [routerLink]="['/products', product.productId]">
+					{{ product.name }}
+				</a></mat-card-title>
+			<mat-card-subtitle>
+			</mat-card-subtitle>
+			<!-- {{member.subtitle}}</mat-card-subtitle>  -->
+		</mat-card-header>
+		<img mat-card-image [src]="product.image" class="image-height" alt="Photo of {{product.name}}">
+		<mat-card-content>
+			<p>
+				{{product.description}}
+			</p>
+		</mat-card-content>
+	</mat-card>
 </div>
-<!-- 
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at http://angular.io/license
--->

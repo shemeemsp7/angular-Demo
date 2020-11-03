@@ -1,26 +1,53 @@
 export const products = [
   {
-    name: "Phone XL",
-    price: 799,
-    description: "A large phone with one of the best screens",
+    name: 'Pale turquoise blue kurti',
+    price: 300,
+    image: '/assets/images/kurtha1.jpg',
+    description: 'Beautiful pale turquoise blue kurti with hand embroidery',
     productId: 100
   },
   {
-    name: "Phone Mini",
+    name: 'Pista green - kurti',
     price: 699,
-    description: "A great phone with one of the best cameras",
+    description: 'Pista green Customized long dress embellished with bead work',
+    image: '/assets/images/kurtha2.jpg',
     productId: 101
   },
   {
-    name: "Phone Standard",
-    price: 299,
-    description: "This is a Standard phone",
-    productId: 102
+    name: 'Pale turquoise blue kurti',
+    price: 799,
+    image: '/assets/images/kurtha1.jpg',
+    description: 'Beautiful pale turquoise blue kurti with hand embroidery',
+    productId: 100
+  },
+  {
+    name: 'Pista green - kurti',
+    price: 699,
+    description: 'Pista green Customized long dress embellished with bead work',
+    image: '/assets/images/kurtha2.jpg',
+    productId: 101
+  },
+  {
+    name: 'Pale turquoise blue kurti',
+    price: 799,
+    image: '/assets/images/kurtha1.jpg',
+    description: 'Beautiful pale turquoise blue kurti with hand embroidery',
+    productId: 100
+  },
+  {
+    name: 'Pista green - kurti',
+    price: 699,
+    description: 'Pista green Customized long dress embellished with bead work',
+    image: '/assets/images/kurtha2.jpg',
+    productId: 101
+  },
+  {
+    name: 'Pale turquoise blue kurti',
+    price: 799,
+    image: '/assets/images/kurtha1.jpg',
+    description: 'Beautiful pale turquoise blue kurti with hand embroidery',
+    productId: 100
   }
 ];
 
-/*
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at http://angular.io/license
-*/
+
